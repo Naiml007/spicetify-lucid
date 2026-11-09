@@ -5,7 +5,7 @@
   "scripts": {
     "sc": "spicetify-creator",
     "dev": "spicetify-creator dev",
-    "build:theme": "spicetify-creator build",
+    "build:theme": "spicetify-creator build && bun scripts/copy-theme-config.ts",
     "build": "bun run docs:build && bun run build:theme",
     "update-types": "spicetify-creator update-types",
     "clean-spice": "spicetify-creator clean-spicetify --all",
